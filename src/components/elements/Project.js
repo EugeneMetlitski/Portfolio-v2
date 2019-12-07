@@ -63,7 +63,7 @@ export default function Projects(props) {
             {props.appLink !== undefined &&
               <Tooltip title="View the source at GitHub" aria-label="source code">
                 <a href={props.appLink} target="_blank" rel="noopener noreferrer">
-                  <IconButton aria-label="gihtub">
+                  <IconButton className={classes.btnIcon} aria-label="gihtub">
                     <GitHubIcon />
                   </IconButton>
                 </a>
@@ -72,7 +72,7 @@ export default function Projects(props) {
             {props.github !== undefined &&
               <Tooltip title="Open app in a new tab" aria-label="open app">
                 <a href={props.github} target="_blank" rel="noopener noreferrer">
-                  <IconButton aria-label="open app">
+                  <IconButton className={classes.btnIcon} aria-label="open app">
                     <ExitToAppIcon />
                   </IconButton>
                 </a>
@@ -81,7 +81,7 @@ export default function Projects(props) {
             {props.download !== undefined &&
               <Tooltip title="Download the app" aria-label="download app">
                 <a href={props.download} target="_blank" rel="noopener noreferrer">
-                  <IconButton aria-label="download">
+                  <IconButton className={classes.btnIcon} aria-label="download">
                     <GetAppRoundedIcon />
                   </IconButton>
                 </a>
@@ -176,12 +176,20 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2),
   },
 
+  btnIcon: {
+    "&:hover": {
+      background: "rgba(0, 121, 107, 0.25)",
+    },
+  },
   expand: {
     transform: 'rotate(0deg)',
     marginLeft: 'auto',
     transition: theme.transitions.create('transform', {
       duration: theme.transitions.duration.shortest,
     }),
+    "&:hover": {
+      background: "rgba(0, 121, 107, 0.25)",
+    },
   },
   expandOpen: {
     transform: 'rotate(180deg)',

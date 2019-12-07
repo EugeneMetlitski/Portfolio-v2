@@ -59,7 +59,7 @@ export default function Contact() {
   );
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(({
   formControl: {
     marginTop: '17px',
     width: '70%',
