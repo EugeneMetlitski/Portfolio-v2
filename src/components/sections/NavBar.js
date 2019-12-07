@@ -10,6 +10,10 @@ import Slide from '@material-ui/core/Slide';
 
 export default function NavBar(props) {
   const classes = useStyles();
+  const onClickIntroduction = (event) => {handleClick(event, '#introduction-anchor')};
+  const onClickSkillsAndEducation = (event) => {handleClick(event, '#skillsAndEducation-anchor')};
+  const onClickProjects = (event) => {handleClick(event, '#projects-anchor')};
+  const onClickContact = (event) => {handleClick(event, '#contact-anchor')};
 
   return (
     <HideOnScroll {...props}>
@@ -18,10 +22,21 @@ export default function NavBar(props) {
           {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton> */}
-          <Typography variant="h6" className={classes.title}>Eugene Metlitski</Typography>
-          <Button color="inherit" className={classes.button}>Introduction</Button>
-          <Button color="inherit" className={classes.button}>Skills & Education</Button>
-          <Button color="inherit" className={classes.button}>Projects</Button>
+          <Typography variant="h6" className={classes.title}>
+            Eugene Metlitski
+          </Typography>
+          <Button color="inherit" className={classes.button} onClick={onClickIntroduction}>
+            Introduction
+          </Button>
+          <Button color="inherit" className={classes.button} onClick={onClickSkillsAndEducation}>
+            Skills & Education
+          </Button>
+          <Button color="inherit" className={classes.button} onClick={onClickProjects}>
+            Projects
+          </Button>
+          <Button color="inherit" className={classes.button} onClick={onClickContact}>
+            Contact
+          </Button>
         </Toolbar>
       </AppBar>
     </HideOnScroll>
@@ -61,3 +76,11 @@ function HideOnScroll(props) {
     </Slide>
   );
 }
+
+const handleClick = (event, elementId) => {
+  const anchor = (event.target.ownerDocument || document).querySelector(elementId);
+
+  if (anchor) {
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};

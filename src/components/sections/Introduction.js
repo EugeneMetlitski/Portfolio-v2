@@ -17,7 +17,7 @@ export default function Introduction() {
         I have been learning Software Development and IT for the past 4 years at
         Tafe, University and in the spare time at home. Currently I have only one
         subject left to complete my bachelor degree at University. I am hoping to
-        get a job and finish my last subject at the same time at the start of 2020.
+        find a job and finish my last subject at the start of 2020.
       </Typography>
 
       {/* Expansion Pannel: Introduction */}

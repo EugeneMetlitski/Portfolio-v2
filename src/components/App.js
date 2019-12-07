@@ -3,10 +3,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
 
 import NavBar from './sections/NavBar';
-import Banner from'./sections/Banner';
-import Introduction from'./sections/Introduction';
-import SkillsAndEducation from'./sections/SkillsAndEducation';
-import Projects from'./sections/Projects';
+import Banner from './sections/Banner';
+import Introduction from './sections/Introduction';
+import SkillsAndEducation from './sections/SkillsAndEducation';
+import Projects from './sections/Projects';
+import Contact from './sections/Contact';
+import Footer from './sections/Footer';
 import BtnScrollUp from './elements/BtnScrollUp';
 
 
@@ -22,14 +24,19 @@ export default function App() {
 
         <div className={classes.content}>
           <Introduction />
-          <br /><Divider variant='middle' /><br />
+          <br /><Divider variant='middle' /><br id="skillsAndEducation-anchor" />
 
           <SkillsAndEducation />
-          <br /><Divider variant='middle' /><br />
+          <br /><Divider variant='middle' /><br id="projects-anchor" />
 
           <Projects />
+          <br /><Divider variant='middle' /><br id="contact-anchor" />
+
+          <Contact />
         </div>
       </div>
+
+      <br /><br /><Footer />
 
       <BtnScrollUp />
     </React.Fragment>
@@ -43,7 +50,6 @@ const useStyles = makeStyles({
     position: 'relative',
     left: '50%',
     transform: 'translate(-50%, 0)',
-    height: '1500px',
   },
   content: {
     textAlign: 'justify',

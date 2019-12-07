@@ -3,8 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
-import Typography from '@material-ui/core/Typography';
 import TitleImage from './../../resources/title-image.jpg';
+
+import SectionTitle from './../elements/SectionTitle';
 
 
 export default function Banner() {
@@ -25,9 +26,8 @@ export default function Banner() {
         </CardActionArea>
       </Card>
 
-      <Typography className={classes.title} gutterBottom variant="h5" component="h2">
-        Welcome to my portfolio site!
-      </Typography>
+      <div id="introduction-anchor"></div>
+      <SectionTitle title="Welcome to my portfolio site!!!" />
 
     </React.Fragment>
   );
@@ -37,10 +37,5 @@ const useStyles = makeStyles({
   card: {
     maxWidth: '950px',
     borderRadius: '0 0 4px 4px',
-  },
-  title: {
-    textAlign: 'center',
-    marginTop: '13px',
-    textShadow: '1px 2px 3px grey',
   },
 });

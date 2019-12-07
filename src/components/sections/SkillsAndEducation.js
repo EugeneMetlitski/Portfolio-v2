@@ -15,6 +15,8 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 
 import SectionTitle from './../elements/SectionTitle';
+import ImgQUT from './../../resources/qut.jpg';
+import ImgTafeQld from './../../resources/tafeQld.jpg';
 
 
 export default function SkillsAndEducation() {
@@ -22,143 +24,154 @@ export default function SkillsAndEducation() {
 
   return (
     <React.Fragment>
-        <SectionTitle title="Skills and Education" />
-        
-        <br />
-        <Typography className={classes.caption} variant="caption" display="block" gutterBottom>
-          These are the <b>languages</b> that I have experience with.
-        </Typography>
+      <SectionTitle title="Skills and Education" />
 
-        <Paper className={classes.chips}>
-          <Chip className={classes.chip} label="JavaScript" />
-          <Chip className={classes.chip} label="CSS" />
-          <Chip className={classes.chip} label="HTML" />
-          <Chip className={classes.chip} label="C#" />
-          <Chip className={classes.chip} label="Java" />
-          <Chip className={classes.chip} label="C/C++" />
-          <Chip className={classes.chip} label="SQL" />
-          <Chip className={classes.chip} label="Python" />
-          <Chip className={classes.chip} label="Matlab" />
-          <Chip className={classes.chip} label="Lua" />
-        </Paper>
 
-        {/* <br /> */}
-        <Typography className={classes.caption} variant="caption" display="block" gutterBottom>
-          These are the <b>technologies</b> that I have experience with.
-        </Typography>
+      {/* EDUCATION LIST */}
+      <br />
+      <Typography className={classes.caption} variant="caption" display="block" gutterBottom>
+        <b>Education</b>
+      </Typography>
+      <Paper className={classes.education}>
+        <List className={classes.educationList}>
+          <ListItem className={classes.educationItem} alignItems="flex-start">
+            <ListItemAvatar>
+              <Avatar alt="QUT Logo" src={ImgQUT} />
+            </ListItemAvatar>
+            <ListItemText
+              primary="Bachelor of Information Technology (Feb 2016 - June 2020)"
+              secondary={
+                <React.Fragment>
+                  <Typography
+                    component="span"
+                    variant="body2"
+                    className={classes.educationInline}
+                    color="textPrimary"
+                  >
+                    Queensland University of Technology<br />
+                  </Typography>
+                  {"Major - Computer Sciene"}<br />
+                  {"Minor - Data Centric Computing (Data Analysis)"}<br />
+                  {"Minor - Intelligent Systems (Machine Learning)"}
+                </React.Fragment>
+              }
+            />
+          </ListItem>
+          <Divider variant="inset" component="li" />
+          <ListItem className={classes.educationItem} alignItems="flex-start">
+            <ListItemAvatar>
+              <Avatar alt="Tafe Logo" src={ImgTafeQld} />
+            </ListItemAvatar>
+            <ListItemText
+              primary="Diploma of Software Development (Feb 2016 - Feb 2017)"
+              secondary={
+                <React.Fragment>
+                  <Typography
+                    component="span"
+                    variant="body2"
+                    className={classes.educationInline}
+                    color="textPrimary"
+                  >
+                    TAFE Queensland
+                  </Typography>
+                </React.Fragment>
+              }
+            />
+          </ListItem>
+          <Divider variant="inset" component="li" />
+          <ListItem className={classes.educationItem} alignItems="flex-start">
+            <ListItemAvatar>
+              <Avatar alt="Tafe Logo" src={ImgTafeQld} />
+            </ListItemAvatar>
+            <ListItemText
+              primary="Certificate 3 in Networking (Sep 2015 - Nov 2015)"
+              secondary={
+                <React.Fragment>
+                  <Typography
+                    component="span"
+                    variant="body2"
+                    className={classes.educationInline}
+                    color="textPrimary"
+                  >
+                    TAFE Queensland
+                  </Typography>
+                </React.Fragment>
+              }
+            />
+          </ListItem>
+        </List>
+      </Paper>
 
-        <Paper className={classes.chips}>
-          <Chip className={classes.chip} label="React" />
-          <Chip className={classes.chip} label="Angular" />
-          <Chip className={classes.chip} label=".NET Core 2.0" />
-          <Chip className={classes.chip} label="SQL Server" />
-          <Chip className={classes.chip} label="Web Assembly" />
-        </Paper>
 
-        {/* EDUCATION LIST */}
-        <br />
-        <Typography className={classes.caption} variant="caption" display="block" gutterBottom>
-          <b>Education</b>
-        </Typography>
-        <Paper className={classes.education}>
-          <List className={classes.educationList}>
-            <ListItem className={classes.educationItem} alignItems="flex-start">
-              <ListItemAvatar>
-                <Avatar alt="QUT Logo" src="" />
-              </ListItemAvatar>
-              <ListItemText
-                primary="Bachelor of Information Technology (Feb 2016 - June 2021)"
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      className={classes.educationInline}
-                      color="textPrimary"
-                    >
-                      Queensland University of Technology<br />
-                    </Typography>
-                    {"Major - Computer Sciene"}<br />
-                    {"Minor - Data Centric Computing (Data Analysis)"}<br />
-                    {"Minor - Machine Learning"}
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" component="li" />
-            <ListItem className={classes.educationItem} alignItems="flex-start">
-              <ListItemAvatar>
-                <Avatar alt="Tafe Logo" src="" />
-              </ListItemAvatar>
-              <ListItemText
-                primary="Diploma of Software Development (Feb 2016 - Feb 2017)"
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      className={classes.educationInline}
-                      color="textPrimary"
-                    >
-                      Queensland Tafe
-                    </Typography>
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" component="li" />
-            <ListItem className={classes.educationItem} alignItems="flex-start">
-              <ListItemAvatar>
-                <Avatar alt="Tafe Logo" src="" />
-              </ListItemAvatar>
-              <ListItemText
-                primary="Certificate 3 in Networking (Sep 2015 - Nov 2015)"
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      className={classes.educationInline}
-                      color="textPrimary"
-                    >
-                      Queensland Tafe
-                    </Typography>
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-          </List>
-        </Paper>
+      <br /><br />
+      <Typography className={classes.caption} variant="caption" display="block" gutterBottom>
+        These are the <b>languages</b> that I have experience with.
+      </Typography>
 
-        <br />
-        {/* Expansion Pannel: Skills and Education */}
-        <div className={classes.expansionPanelContainer}>
-          <ExpansionPanel>
-            <ExpansionPanelSummary className={classes.expansionPanelSummary}
-              expandIcon={<ExpandMoreIcon className={classes.expansionButton} />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography className={classes.expansionPanelHeading}>
-                More Info
-              </Typography>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails className={classes.expansionPanelDetails}>
-              <Typography>
-                Since discovering the world of IT 4 years ago, I've completed Certificate 3 in
-                Networking, Diploma of Software Development and almost finished Bachelor of
-                Information Technology degree with 1 subject left to complete next year. The
-                reason why I have 1 subject left to complete is because I've changed my second
-                major half way through the study from computationial science to 2 minors in
-                machine learning and datacentric computing, and this added a few subject to the
-                degree. Another reason is that during some semestors I undertook 3 subjects per
-                semester and during other semesters I undertook 4 subject per semester (Also
-                having done Diploma in Tafe gave credits for some subjects and I had to do less
-                subjects in the degree because of that).
-              </Typography>
-            </ExpansionPanelDetails>
-          </ExpansionPanel>
-        </div>
+      <Paper className={classes.chips}>
+        <Chip className={classes.chip} label="JavaScript" />
+        <Chip className={classes.chip} label="CSS" />
+        <Chip className={classes.chip} label="HTML" />
+        <Chip className={classes.chip} label="C#" />
+        <Chip className={classes.chip} label="Java" />
+        <Chip className={classes.chip} label="C/C++" />
+        <Chip className={classes.chip} label="SQL" />
+        <Chip className={classes.chip} label="Python" />
+        <Chip className={classes.chip} label="Matlab" />
+        <Chip className={classes.chip} label="Lua" />
+      </Paper>
+
+      <Typography className={classes.caption} variant="caption" display="block" gutterBottom>
+        These are the <b>technologies</b> that I have experience with.
+      </Typography>
+
+      <Paper className={classes.chips}>
+        <Chip className={classes.chip} label="React" />
+        <Chip className={classes.chip} label="Angular" />
+        <Chip className={classes.chip} label=".NET Core 2.0" />
+        <Chip className={classes.chip} label="SQL Server" />
+        {/* <Chip className={classes.chip} label="Web Assembly" /> */}
+      </Paper>
+
+
+      {/* Expansion Pannel */}
+      <br />
+      <div className={classes.expansionPanelContainer}>
+        <ExpansionPanel>
+          <ExpansionPanelSummary className={classes.expansionPanelSummary}
+            expandIcon={<ExpandMoreIcon className={classes.expansionButton} />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography className={classes.expansionPanelHeading}>
+              More Info
+            </Typography>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails className={classes.expansionPanelDetails}>
+            <Typography>
+              Most of the Software Development skills I've learned are through
+              education. I'm not an expert in any language or technology,
+              but I feel comfortable to get up and running with a React/Angular
+              project, C#/Java project, data analysis and machine learning in
+              python or matlab, and with a c/c++ project.
+              <br /><br />
+              Diploma in Software Development taught me more about the front
+              and back-end development in C#, Java and HTML/CSS/JS. It had
+              also taught me about the Software Development Lifecycles.
+              <br /><br />
+              At University I learned fundementals in Computer Science, low
+              level programming in C, high performance and multi-threaded
+              programming, operating system programming, machine-learning,
+              robot vision and movement programming, data-analysis, project
+              management and other Software Development related topics.
+              <br /><br />
+              In the spare time I learned more about HTML, CSS, JavaScript,
+              Angular, React, .Net Core, C/C++ and OpenGL.
+            </Typography>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+      </div>
+
     </React.Fragment>
   );
 }

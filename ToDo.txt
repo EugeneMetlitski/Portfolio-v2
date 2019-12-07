@@ -1,0 +1,17 @@
+- make "Projects" section title have similar vertical
+  spacing as "Skills and Education"
+
+In Project:
+- utilize flex correctly in following tasks
+- pass in expanded section from parent component
+- make picture less wide (square maybe)
+- make picture push intruction to new line on
+  smaller screens
+- push links down to bottom of introduction
+- maybe change background of links
+- add mouse-hover text
+
+- add "Contact" section
+
+NOTES:
+- maybe in first person is not good to write
