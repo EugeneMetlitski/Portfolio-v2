@@ -20,8 +20,7 @@ export default function Projects() {
         image={ImgPortfolioV2}
         imageTitle="Portfolio Project v2"
         technologies={['React', '.Net Core 2', 'SQL Server']}
-        appLink='https://www.bing.com'
-        github='https://www.github.com'
+        github='https://github.com/EugeneMetlitski/Portfolio-v2'
         introduction={`
           This is a second version of my portfolio website, which I created
           recently near the end of 2019. It uses React and Material-UI on
@@ -49,8 +48,8 @@ export default function Projects() {
         image={ImgWorkoutApp}
         imageTitle="Workout App"
         technologies={['Angular', '.Net Core 2', 'SQL Server']}
-        appLink='https://www.bing.com'
-        github='https://www.github.com'
+        appLink='http://eugene-metlitski.com/workout-app/login'
+        github='https://github.com/EugeneMetlitski/Workout-App-v1'
         introduction={`
           This is a personal app I created to help with workout sessions. It records
           the details of a weight-lifting session (date, exercises done, weights,
@@ -86,8 +85,8 @@ export default function Projects() {
         image={ImgPortfolioV1}
         imageTitle="Portfolio Project v2"
         technologies={['Angular', '.Net Core 2', 'SQL Server']}
-        appLink='https://www.bing.com'
-        github='https://www.github.com'
+        appLink='http://eugene-metlitski.com/portfolio-site-v1'
+        github='https://github.com/EugeneMetlitski/Portfolio-v1'
         introduction={`
           This is my first portfolio website. It was created in 2018 and it's one of
           my first personal projects that I worked on in the spare time.

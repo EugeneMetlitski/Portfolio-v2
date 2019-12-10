@@ -155,15 +155,15 @@ export default function SkillsAndEducation() {
               project, C#/Java project, data analysis and machine learning in
               python or matlab, and with a c/c++ project.
               <br /><br />
-              Diploma in Software Development taught me more about the front
-              and back-end development in C#, Java and HTML/CSS/JS. It had
-              also taught me about the Software Development Lifecycles.
-              <br /><br />
-              At University I learned fundementals in Computer Science, low
+              At University I learned the fundementals of Computer Science, low
               level programming in C, high performance and multi-threaded
-              programming, operating system programming, machine-learning,
+              programming, operating-system programming, machine-learning,
               robot vision and movement programming, data-analysis, project
               management and other Software Development related topics.
+              <br /><br />
+              Diploma in Software Development taught me about the front and
+              back-end development in C#, Java and HTML/CSS/JS. It had
+              also taught me about the Software Development Lifecycles.
               <br /><br />
               In the spare time I learned more about HTML, CSS, JavaScript,
               Angular, React, .Net Core, C/C++ and OpenGL.

@@ -61,19 +61,19 @@ export default function Projects(props) {
 
           <CardActions className={classes.links} disableSpacing>
             {props.appLink !== undefined &&
-              <Tooltip title="View the source at GitHub" aria-label="source code">
+              <Tooltip title="Open app in a new tab" aria-label="open app">
                 <a href={props.appLink} target="_blank" rel="noopener noreferrer">
                   <IconButton className={classes.btnIcon} aria-label="gihtub">
-                    <GitHubIcon />
+                    <ExitToAppIcon />
                   </IconButton>
                 </a>
               </Tooltip>
             }
             {props.github !== undefined &&
-              <Tooltip title="Open app in a new tab" aria-label="open app">
+              <Tooltip title="View the source at GitHub" aria-label="source code">
                 <a href={props.github} target="_blank" rel="noopener noreferrer">
                   <IconButton className={classes.btnIcon} aria-label="open app">
-                    <ExitToAppIcon />
+                    <GitHubIcon />
                   </IconButton>
                 </a>
               </Tooltip>
@@ -178,7 +178,7 @@ const useStyles = makeStyles(theme => ({
 
   btnIcon: {
     "&:hover": {
-      background: "rgba(0, 121, 107, 0.25)",
+      background: "rgba(0, 121, 107, 0.15)",
     },
   },
   expand: {
@@ -188,7 +188,7 @@ const useStyles = makeStyles(theme => ({
       duration: theme.transitions.duration.shortest,
     }),
     "&:hover": {
-      background: "rgba(0, 121, 107, 0.25)",
+      background: "rgba(0, 121, 107, 0.15)",
     },
   },
   expandOpen: {

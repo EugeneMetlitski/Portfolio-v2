@@ -158,7 +158,7 @@ const useStyles = makeStyles(theme => ({
     },
   },
   menuText: {
-    margin: '15px',
+    margin: '10px',
   },
 }));
 
