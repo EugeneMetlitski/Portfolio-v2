@@ -124,6 +124,7 @@ const useStyles = makeStyles(theme => ({
     paddingLeft: '30px',
     paddingRight: '30px',
     maxWidth: '950px',
+    minHeight: '64px',
     position: 'relative',
     left: '50%',
     transform: 'translate(-50%, 0)',

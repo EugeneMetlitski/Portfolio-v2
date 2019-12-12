@@ -16,34 +16,6 @@ export default function Projects() {
       <SectionTitle title="Projects" />
 
       <Project
-        title="Portfolio Website (version 2)"
-        image={ImgPortfolioV2}
-        imageTitle="Portfolio Project v2"
-        technologies={['React', '.Net Core 2', 'SQL Server']}
-        github='https://github.com/EugeneMetlitski/Portfolio-v2'
-        introduction={`
-          This is a second version of my portfolio website, which I created
-          recently near the end of 2019. It uses React and Material-UI on
-          the front end, and it has a nicer design than previous.
-        `}
-        paddingTop='59%'
-      >
-        <Typography paragraph>
-          The source code for the front-end portion of this application is
-          in my public GitHub repository.
-        </Typography>
-        <Typography paragraph>
-          The back-end is the same as the back-end for version 1 of my
-          portfolio site. It is created with .Net Core 2. It uses SQL
-          Server as the database to store any messages sent through the
-          "Contact" section.
-        </Typography>
-        <Typography>
-          This website and the database are hosted in Azure.
-        </Typography>
-      </Project>
-
-      <Project
         title="Workout App"
         image={ImgWorkoutApp}
         imageTitle="Workout App"
@@ -60,8 +32,8 @@ export default function Projects() {
         <Typography paragraph>
           The instructions on how to use the app can be found on the GitHub page for
           this app (GitHub repo for the front-end portion of the app). Feel free to
-          browse through instructions and source code on GitHub and feel free to use
-          the app itself.
+          browse through instructions and source code on GitHub and to use the app
+          itself.
         </Typography>
         <Typography paragraph>
           This is a web app that connects to the same back-end api that
@@ -75,8 +47,8 @@ export default function Projects() {
         </Typography>
         <Typography paragraph>
           The back-end is written in .Net Core 2. The source code for the back-end
-          is in my private repository for security. I can show and/or discuss the
-          back-end if requested.
+          is in my private repository for security and I can show/discuss it upon
+          requested.
         </Typography>
       </Project>
 
@@ -113,6 +85,33 @@ export default function Projects() {
         </Typography>
       </Project>
 
+      <Project
+        title="Portfolio Website (version 2)"
+        image={ImgPortfolioV2}
+        imageTitle="Portfolio Project v2"
+        technologies={['React', '.Net Core 2', 'SQL Server']}
+        github='https://github.com/EugeneMetlitski/Portfolio-v2'
+        introduction={`
+          This is a second version of my portfolio website, which I created
+          recently near the end of 2019. It uses React and Material-UI on
+          the front end, and it has a nicer design than previous.
+        `}
+        paddingTop='59%'
+      >
+        <Typography paragraph>
+          The source code for the front-end portion of this application is
+          in my public GitHub repository.
+        </Typography>
+        <Typography paragraph>
+          The back-end is the same as the back-end for version 1 of my
+          portfolio site. It is created with .Net Core 2. It uses SQL
+          Server as the database to store any messages sent through the
+          "Contact" section.
+        </Typography>
+        <Typography>
+          This website and the database are hosted in Azure.
+        </Typography>
+      </Project>
 
       {/* <Project
         title="Platformer Game"

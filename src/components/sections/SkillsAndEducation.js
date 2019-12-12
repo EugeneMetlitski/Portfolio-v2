@@ -2,10 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Chip from '@material-ui/core/Chip';
 import Paper from '@material-ui/core/Paper';
 import List from '@material-ui/core/List';
@@ -132,45 +128,6 @@ export default function SkillsAndEducation() {
         <Chip className={classes.chip} label="SQL Server" />
         {/* <Chip className={classes.chip} label="Web Assembly" /> */}
       </Paper>
-
-
-      {/* Expansion Pannel */}
-      <br />
-      <div className={classes.expansionPanelContainer}>
-        <ExpansionPanel>
-          <ExpansionPanelSummary className={classes.expansionPanelSummary}
-            expandIcon={<ExpandMoreIcon className={classes.expansionButton} />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
-            <Typography className={classes.expansionPanelHeading}>
-              More Info
-            </Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails className={classes.expansionPanelDetails}>
-            <Typography>
-              Most of the Software Development skills I've learned are through
-              education. I'm not an expert in any language or technology,
-              but I feel comfortable to get up and running with a React/Angular
-              project, C#/Java project, data analysis and machine learning in
-              python or matlab, and with a c/c++ project.
-              <br /><br />
-              At University I learned the fundementals of Computer Science, low
-              level programming in C, high performance and multi-threaded
-              programming, operating-system programming, machine-learning,
-              robot vision and movement programming, data-analysis, project
-              management and other Software Development related topics.
-              <br /><br />
-              Diploma in Software Development taught me about the front and
-              back-end development in C#, Java and HTML/CSS/JS. It had
-              also taught me about the Software Development Lifecycles.
-              <br /><br />
-              In the spare time I learned more about HTML, CSS, JavaScript,
-              Angular, React, .Net Core, C/C++ and OpenGL.
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-      </div>
 
     </React.Fragment>
   );

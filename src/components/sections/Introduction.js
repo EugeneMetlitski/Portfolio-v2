@@ -14,10 +14,12 @@ export default function Introduction() {
     <React.Fragment>
 
       <Typography variant="body1" gutterBottom>
-        I have been learning Software Development and IT for the past 4 years at
-        Tafe, University and in the spare time at home. Currently I have only one
-        subject left to complete my bachelor degree at University. I am hoping to
-        find a job and finish my last subject at the start of 2020.
+        I am graduating from university with an Information Technology (Computer
+        Science major) degree very soon and I'm looking to find my first job in
+        software development. I'm not an expert in any language yet, but have
+        experience with making many different types of small programs (mostly from
+        Tafe and University). I have also been learning more programming in the spare
+        time at home (with React, Angular, .Net Core, SQL Server, c/c++ and OpenGL).
       </Typography>
 
       {/* Expansion Pannel: Introduction */}
@@ -36,23 +38,30 @@ export default function Introduction() {
 
           <ExpansionPanelDetails className={classes.expansionPanelDetails}>
             <Typography>
-              Since discovering the world of IT 4 years ago, I've completed Certificate 3 in
-              Networking, Diploma of Software Development and almost finished Bachelor of
-              Information Technology degree with 1 subject left to complete next year. The
-              reason why I have 1 subject left to complete is because I've changed my second
-              major half way through the study from computationial science to 2 minors in
-              machine learning and datacentric computing, and this added a few subject to the
-              degree. Another reason is that during some semestors I undertook 3 subjects per
-              semester and during other semesters I undertook 4 subject per semester (Also
-              having done Diploma in Tafe gave credits for some subjects and I had to do less
-              subjects in the degree because of that).<br /><br />
-              I was born in Russia and have lived in Australia since the age of 12 (I'm 31 years old now),
-              therefore I'm fluent in English language. <br /><br />
-              I enjoy developing software and writing code whether it is to make a website
-              (front-end and/or back-end) mobile app, video-game, do some data analysis, machine learning
-              or write a program in low level c/c++ code. I'm not an expert in any language yet, but have
-              some experience with making many different types of small programs (mostly from Tafe
-              and University).
+              I enjoy many different types of programming, whether it's to make a web or
+              mobile app (front-end and back-end), write low level code for a robot or
+              embedded systems, write high performance and milti-threaded programs, do
+              machine learning, data analysis and make video games.
+              <br /><br />
+              Most of the Software Development skills I've learned are through
+              education. I'm not an expert in any language or technology,
+              but I feel comfortable to get up and running with a React/Angular
+              project, C#/Java project, data analysis and machine learning project
+              in python or matlab, and with a c/c++ project.
+              <br /><br />
+              At University I learned the fundementals of Computer Science, low
+              level programming in C, high performance and multi-threaded
+              programming, operating-system programming, machine-learning,
+              robot vision and movement programming, data-analysis, project
+              management and other Software Development related topics.
+              <br /><br />
+              Diploma in Software Development taught me about the front and
+              back-end development in C#, Java and HTML/CSS/JS. It had
+              also taught me about the Software Development Lifecycles and how
+              to gather project requirements from clients.
+              <br /><br />
+              In the spare time I learned more about HTML, CSS, JavaScript,
+              Angular, React, .Net Core, C/C++ and OpenGL.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
