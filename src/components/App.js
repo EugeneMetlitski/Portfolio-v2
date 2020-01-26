@@ -26,11 +26,11 @@ export default function App() {
           <Introduction />
           <br /><Divider variant='middle' /><br id="skillsAndEducation-anchor" />
 
-          <SkillsAndEducation />
-          <br /><Divider variant='middle' /><br id="projects-anchor" />
-
           <Projects />
           <br /><Divider variant='middle' /><br id="contact-anchor" />
+          
+          <SkillsAndEducation />
+          <br /><Divider variant='middle' /><br id="projects-anchor" />
 
           <Contact />
         </div>
@@ -53,6 +53,6 @@ const useStyles = makeStyles({
   },
   content: {
     textAlign: 'justify',
-    margin: '40px',
+    margin: '20px 40px 40px 40px',
   },
 });

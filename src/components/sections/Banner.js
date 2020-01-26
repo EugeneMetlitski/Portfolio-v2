@@ -27,7 +27,8 @@ export default function Banner() {
       </Card>
 
       <div id="introduction-anchor"></div>
-      <SectionTitle title="Welcome to my portfolio site!!!" />
+      <br />
+      <SectionTitle title="Full Stack Web Developer"/>
 
     </React.Fragment>
   );

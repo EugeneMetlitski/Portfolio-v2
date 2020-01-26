@@ -25,9 +25,9 @@ export default function SkillsAndEducation() {
 
       {/* EDUCATION LIST */}
       <br />
-      <Typography className={classes.caption} variant="caption" display="block" gutterBottom>
+      {/* <Typography className={classes.caption} variant="caption" display="block" gutterBottom>
         <b>Education</b>
-      </Typography>
+      </Typography> */}
       <Paper className={classes.education}>
         <List className={classes.educationList}>
           <ListItem className={classes.educationItem} alignItems="flex-start">

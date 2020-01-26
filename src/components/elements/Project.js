@@ -31,12 +31,14 @@ export default function Projects(props) {
     <Card className={classes.container}>
       <div className={classes.card}>
         <CardActionArea className={classes.pictureContainer}>
-          <CardMedia
-            className={classes.picture}
-            style={{paddingTop: props.paddingTop}}
-            image={props.image}
-            title={props.imageTitle}
-          />
+          <a href={props.appLink} target="_blank" rel="noopener noreferrer">
+            <CardMedia
+              className={classes.picture}
+              style={{paddingTop: props.paddingTop}}
+              image={props.image}
+              title={props.imageTitle}
+            />
+          </a>
         </CardActionArea>
 
         <div className={classes.cardContentContainer}>

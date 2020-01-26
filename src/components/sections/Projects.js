@@ -53,6 +53,34 @@ export default function Projects() {
       </Project>
 
       <Project
+        title="Portfolio Website (version 2)"
+        image={ImgPortfolioV2}
+        imageTitle="Portfolio Project v2"
+        technologies={['React', '.Net Core 2', 'SQL Server']}
+        github='https://github.com/EugeneMetlitski/Portfolio-v2'
+        introduction={`
+          This is a second version of my portfolio website, which I created
+          recently near the end of 2019. It uses React and Material-UI on
+          the front end, and it has a nicer design than previous.
+        `}
+        paddingTop='59%'
+      >
+        <Typography paragraph>
+          The source code for the front-end portion of this application is
+          in my public GitHub repository.
+        </Typography>
+        <Typography paragraph>
+          The back-end is the same as the back-end for version 1 of my
+          portfolio site. It is created with .Net Core 2. It uses SQL
+          Server as the database to store any messages sent through the
+          "Contact" section.
+        </Typography>
+        <Typography>
+          This website and the database are hosted in Azure.
+        </Typography>
+      </Project>
+
+      <Project
         title="Portfolio Website (version 1)"
         image={ImgPortfolioV1}
         imageTitle="Portfolio Project v2"
@@ -84,70 +112,6 @@ export default function Projects() {
           and I can show/discuss it upon request.
         </Typography>
       </Project>
-
-      <Project
-        title="Portfolio Website (version 2)"
-        image={ImgPortfolioV2}
-        imageTitle="Portfolio Project v2"
-        technologies={['React', '.Net Core 2', 'SQL Server']}
-        github='https://github.com/EugeneMetlitski/Portfolio-v2'
-        introduction={`
-          This is a second version of my portfolio website, which I created
-          recently near the end of 2019. It uses React and Material-UI on
-          the front end, and it has a nicer design than previous.
-        `}
-        paddingTop='59%'
-      >
-        <Typography paragraph>
-          The source code for the front-end portion of this application is
-          in my public GitHub repository.
-        </Typography>
-        <Typography paragraph>
-          The back-end is the same as the back-end for version 1 of my
-          portfolio site. It is created with .Net Core 2. It uses SQL
-          Server as the database to store any messages sent through the
-          "Contact" section.
-        </Typography>
-        <Typography>
-          This website and the database are hosted in Azure.
-        </Typography>
-      </Project>
-
-      {/* <Project
-        title="Platformer Game"
-        image={TitleImage}
-        imageTitle="Platformer Game Project"
-        introduction={`
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the
-          mussels, if you like.
-        `}
-        paddingTop='56.25%'
-      >
-        <Typography paragraph>Method:</Typography>
-        <Typography paragraph>
-          Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10
-          minutes.
-        </Typography>
-        <Typography paragraph>
-          Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high
-          heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly
-          browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving chicken
-          and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion, salt and
-          pepper, and cook, stirring often until thickened and fragrant, about 10 minutes. Add
-          saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
-        </Typography>
-        <Typography paragraph>
-          Add rice and stir very gently to distribute. Top with artichokes and peppers, and cook
-          without stirring, until most of the liquid is absorbed, 15 to 18 minutes. Reduce heat to
-          medium-low, add reserved shrimp and mussels, tucking them down into the rice, and cook
-          again without stirring, until mussels have opened and rice is just tender, 5 to 7
-          minutes more. (Discard any mussels that don’t open.)
-        </Typography>
-        <Typography>
-          Set aside off of the heat to let rest for 10 minutes, and then serve.
-        </Typography>
-      </Project> */}
 
     </React.Fragment>
   );

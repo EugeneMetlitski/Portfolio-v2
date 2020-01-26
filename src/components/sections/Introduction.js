@@ -80,6 +80,9 @@ const useStyles = makeStyles(theme => ({
   expansionPanelSummary: {
     background: '#00695c',
     color: 'white',
+    "&:hover": {
+      background: "#00796b"
+    },
   },
   expansionButton: {
     color: 'white',
