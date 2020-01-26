@@ -53,6 +53,6 @@ const useStyles = makeStyles({
   },
   content: {
     textAlign: 'justify',
-    margin: '20px 40px 40px 40px',
+    margin: '40px 40px 40px 40px',
   },
 });

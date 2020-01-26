@@ -14,12 +14,16 @@ export default function Introduction() {
     <React.Fragment>
 
       <Typography variant="body1" gutterBottom>
-        I am graduating from university with an Information Technology (Computer
-        Science major) degree very soon and I'm looking to find my first job in
-        software development. I'm not an expert in any language yet, but have
-        experience with making many different types of small programs (mostly from
-        Tafe and University). I have also been learning more programming in the spare
-        time at home (with React, Angular, .Net Core, SQL Server, c/c++ and OpenGL).
+        I've been learning Software Development for the past 4 ears through TAFE,
+        University, by using online sources such as Udemy and Lynda.com
+        and by creating personal applications.
+        <br /><br />
+        I have skills in creating websites using technologies such as React,
+        Angular, .Net Core and SQL Server.
+        {/* I enjoy developing software whether it is to make a website (front-end
+        and/or back-end), mobile app, program a robot or embedded system, do
+        machine-learning and data-analysis or write a program in C/C++.
+        <br /><br /> */}
       </Typography>
 
       {/* Expansion Pannel: Introduction */}
@@ -38,30 +42,19 @@ export default function Introduction() {
 
           <ExpansionPanelDetails className={classes.expansionPanelDetails}>
             <Typography>
-              I enjoy many different types of programming, whether it's to make a web or
-              mobile app (front-end and back-end), write low level code for a robot or
-              embedded systems, write high performance and milti-threaded programs, do
-              machine learning, data analysis and make video games.
+              I enjoy learning and working with many different languages and
+              technologies, from making websites using TypeScript/JavaScript,
+              doing machine learning and data analysis in Python or SQL Server
+              to programming a fast performing program or a 3D application in
+              C/C++.
               <br /><br />
-              Most of the Software Development skills I've learned are through
-              education. I'm not an expert in any language or technology,
-              but I feel comfortable to get up and running with a React/Angular
-              project, C#/Java project, data analysis and machine learning project
-              in python or matlab, and with a c/c++ project.
-              <br /><br />
-              At University I learned the fundementals of Computer Science, low
-              level programming in C, high performance and multi-threaded
-              programming, operating-system programming, machine-learning,
-              robot vision and movement programming, data-analysis, project
-              management and other Software Development related topics.
-              <br /><br />
-              Diploma in Software Development taught me about the front and
-              back-end development in C#, Java and HTML/CSS/JS. It had
-              also taught me about the Software Development Lifecycles and how
-              to gather project requirements from clients.
-              <br /><br />
-              In the spare time I learned more about HTML, CSS, JavaScript,
-              Angular, React, .Net Core, C/C++ and OpenGL.
+              In addition to web development, I also have been learning about
+              Artificial Intelligence, Machine Learning and Data Analysis through
+              my Univerity degre. I have also learned to work with low-level
+              C/C++ code on things such as high-performance programming using
+              multi-threading, systems programming (about how operating systems
+              work), some OpenGL 3D programming and how to program a robot to
+              analyse images and move an arm in 3D environment.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
